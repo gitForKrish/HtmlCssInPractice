@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Handling Form with input elements</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Handling Form with input elements</title>
-</head>
-
-<body>
-  <!-- Default action url is the same page i.e. it will render same page -->
-  <!-- Default method is GET -->
-  <!-- Name attribute is used for Server side operation -->
-  <!-- ID attribute is used for Client side operation  -->
-  <form action="" method="">
-    <div>
-      <label for="firstname">First Name: </label>
-      <input type="text" name="firstname" id="firstname">
-    </div>
-    <br>
-    <div>
-      <label for="lastname">Last Name: </label>
-      <input type="text" name="lastname" id="lastname">
-    </div>
-    <br>
-    <div>
-      <label for="password">Password: </label>
-      <input type="password" name="password" id="password" placeholder="enter password">
-    </div>
-    <br>
-    <div>
-      Email: <input type="email" name="email"  id="email" value="abc@email.com">
-    </div>
-    <br>
-    <div>
-      <textarea name="description" id="description" cols="50" rows="10" placeholder="enter your description"></textarea>
-    </div>
-    <br>
-    <div>
-      <div>What is your favorite programming language?</div>
-      <input type="radio" name="favPL" id="" value="html">HTML
-      <input type="radio" name="favPL" id="" value="js">JavaScript
-      <input type="radio" name="favPL" id="" value="css">CSS
-    </div>
-    <br>
-    <br>
-    <div>
-      <div>What are your favorite programming language?</div>
-      <input type="checkbox" name="languages" id="" value="html">HTML
-      <input type="checkbox" name="languages" id="" value="js" checked>JavaScript
-      <input type="checkbox" name="languages" id="" value="css">CSS
-    </div>
-    <br>
-    <div>
+  <body>
+    <!-- Default action url is the same page i.e. it will render same page -->
+    <!-- Default method is GET -->
+    <!-- Name attribute is used for Server side operation -->
+    <!-- ID attribute is used for Client side operation  -->
+    <form action="" method="">
+      <div>
+        <label for="firstname">First Name: </label>
+        <input type="text" name="firstname" id="firstname" />
+      </div>
+      <br />
+      <div>
+        <label for="lastname">Last Name: </label>
+        <input type="text" name="lastname" id="lastname" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="enter password"
+        />
+      </div>
+      <br />
+      <div>
+        Email:
+        <input type="email" name="email" id="email" value="abc@email.com" />
+      </div>
+      <br />
+      <div>
+        <textarea
+          name="description"
+          id="description"
+          cols="50"
+          rows="10"
+          placeholder="enter your description"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <div>What is your favorite programming language?</div>
+        <input type="radio" name="favPL" id="" value="html" />HTML
+        <input type="radio" name="favPL" id="" value="js" />JavaScript
+        <input type="radio" name="favPL" id="" value="css" />CSS
+      </div>
+      <br />
+      <br />
+      <div>
+        <div>What are your favorite programming language?</div>
+        <input type="checkbox" name="languages" id="" value="html" />HTML
+        <input
+          type="checkbox"
+          name="languages"
+          id=""
+          value="js"
+          checked
+        />JavaScript
+        <input type="checkbox" name="languages" id="" value="css" />CSS
+      </div>
+      <br />
+      <div>
         <div>Select your favorite programming language?</div>
         <select name="langs" id="">
           <option value="html">HTML</option>
@@ -60,14 +77,14 @@
           <option value="css">CSS</option>
         </select>
       </div>
-      <br>
-    <button type="submit">Submit</button>
-  </form>
-  <br>
-  PostData: <br>
-  <textarea name="postdata" id="postdata" cols="60 " rows="10"></textarea>
-  <script>
-  document.querySelector('#postdata').innerText = window.location.href;
-  </script>
-</body>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <br />
+    PostData: <br />
+    <textarea name="postdata" id="postdata" cols="60 " rows="10"></textarea>
+    <script>
+      document.querySelector("#postdata").innerText = window.location.href;
+    </script>
+  </body>
 </html>
