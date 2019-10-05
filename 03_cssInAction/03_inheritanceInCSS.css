@@ -1,0 +1,15 @@
+body {
+  /* These properties will be inherited to all the down elements */
+  color: green;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+div {
+  color: red;
+  /* But not all properties are being inherited */
+  border: 1px solid black;
+}
+#innerDiv {
+  color: blue;
+}
