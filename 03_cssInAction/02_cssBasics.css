@@ -1,0 +1,41 @@
+/* Type Selectors */
+h1 {
+  color: red;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/* Element grouping */
+h2,
+h3 {
+  color: green;
+}
+
+/* ID Selector */
+#header {
+  color: yellow;
+  background: black;
+}
+#footer {
+  color: blue;
+  background: red;
+}
+
+/* Class selector */
+.title {
+  color: green;
+  background: black;
+}
+
+/* Combining selectors */
+#heading {
+  font-size: 2rem;
+}
+.green {
+  color: green;
+}
+.uppercase {
+  text-transform: uppercase;
+}
