@@ -1,0 +1,22 @@
+/* CSS rules - Last operation wins */
+p {
+  color: yellow;
+}
+
+p {
+  color: green;
+}
+
+/* Specificity */
+.red {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+/* Universal selector - has least specificity */
+* {
+  color: yellow;
+}
