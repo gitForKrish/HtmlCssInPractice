@@ -1,0 +1,22 @@
+/* 
+font-stack and generic-family
+Five generic families:
+'serif' (e.g., Times)
+'sans-serif' (e.g., Helvetica)
+'cursive' (e.g., Zapf-Chancery)
+'fantasy' (e.g., Western)
+'monospace' (e.g., Courier)
+*/
+body {
+  font-family: helvetica;
+  font-size: 20px;
+}
+
+h1 {
+  /* Font stack */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
