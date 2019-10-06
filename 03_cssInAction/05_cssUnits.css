@@ -1,0 +1,64 @@
+/* Absolute unit - Pixels */
+h1 {
+  font-size: 40px;
+  width: 400px;
+  height: 100px;
+  background: blue;
+}
+
+.outer {
+  width: 200px;
+  height: 200px;
+  background: red;
+}
+
+/* Relative unit - Percent (%) */
+.inner {
+  width: 50%;
+  height: 50%;
+  background: blue;
+}
+
+/* 
+em - Relative depends on parent
+1em - 16px browser default style
+1em - base value
+*/
+.relative {
+  font-size: 2em;
+}
+.absolute {
+  font-size: 32px;
+}
+.emUnit {
+  font-size: 10px;
+}
+
+/* 
+rem -Root em, relative depends on root element HTML
+1rem - 16px browser default style
+ */
+.remUnit {
+  font-size: 10px;
+}
+.relativeRem {
+  font-size: 2rem;
+}
+.absoluteRem {
+  font-size: 32px;
+}
+
+/* 
+vh - viewheight - percentage of the screen 
+vw - viewwidth - percentage of the screen 
+*/
+.banner {
+  width: 50vw;
+  height: 50vh;
+  background: red;
+}
+.header {
+  width: 100vw;
+  height: 100vh;
+  background: blue;
+}
