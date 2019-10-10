@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anchors and Hyperlinks</title>
+  </head>
+  <body>
+    <!-- Link to nowhere -->
+    <a href="#">Link to nowhere</a>
+    <br />
+    <!-- Link to another site -->
+    <a href="https://www.google.co.in">Link to Google</a>
+    <br />
+    <!-- To denote this link leads to an external website -->
+    <a href="https://www.google.co.in" rel="external"
+      >Link to Google External</a
+    >
+    <br />
+
+    <!-- Link to an anchor -->
+    <a id="tagLinker" href="./02_anchorsAndLinksSupport.html#topic1">Topic 1</a>
+    <br />
+    <a href="./02_anchorsAndLinksSupport.html#topic2">Topic 2</a>
+    <br />
+
+    <!-- Open link in new tab/window -->
+    <a href="https://www.google.co.in" target="_blank"
+      >Link with _blank target</a
+    >
+    <br />
+    <a href="https://www.google.co.in" target="_self">Link with _self target</a>
+    <br />
+    <a href="https://www.google.co.in" target="_parent"
+      >Link with _parent target</a
+    >
+    <br />
+    <a href="https://www.google.co.in" target="_new">Link with _new target</a>
+    <br />
+    <!-- To avoid potentially redirect users to malware or phishing sites -->
+    <!-- Use rel="noopener" to your link to prevent the
+window.opener object from being sent with the request -->
+    <a href="https:www.google.com" target="_blank" rel="noopener noreferrer"
+      >Link to Google</a
+    >
+    <br />
+
+    <!-- Link that runs JavaScript -->
+    <a href="javascript:myfunction();">Execute JS with Href</a>
+    <br />
+    <a href="#" onclick="myfunction(); return false;"
+      >Execute JS with OnClick</a
+    >
+    <!-- return false; is necessary to prevent your page from scrolling to the top when the link to # is clicked -->
+    <br />
+    <a href="#!" onclick="myfunction();">Execute JS with no Scroll</a>
+    <!-- link to not scroll anywhere on the page, because it couldn't locate the element it references -->
+    <br />
+
+    <!-- Link that dials a number -->
+    <a href="tel:9088168785">Call us</a>
+    <br />
+
+    <!-- Link that runs email client -->
+    <a href="mailto:krishnendu.mandal@email.com">Send mail to Krishnendu</a>
+    <br />
+    <!-- Mail with cc, bcc, subject and body -->
+    <a
+      href="mailto:ks@email.com?cc=ks1@email.com&bcc=ks2@email.com&subject=example+text&body=message+body"
+      >Send mail</a
+    >
+    <script>
+      function myfunction() {
+        alert("I am called from a link");
+      }
+    </script>
+  </body>
+</html>
